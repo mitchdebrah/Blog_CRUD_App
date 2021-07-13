@@ -12,6 +12,9 @@ const path = require("path");
 
 dotenv.config();
 app.use(express.json());
+
+const PORT = process.env.PORT || 3003
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/mongo_appDB';
 app.use("/images", express.static(path.join(__dirname, "/images")));
 
 mongoose
@@ -21,6 +24,10 @@ mongoose
     useCreateIndex: true,
     useFindAndModify:false,
   })
+
+  mongoose.connection.once('open', ()=> {
+    console.log('connected to mongo :)')
+})
   .then(console.log("Connected to MongoDB"))
   .catch((err) => console.log(err));
 
@@ -46,9 +53,9 @@ app.use("/api/sections", sectionsroute);
 app.get('/', (req, res) => {
   res.send('server up')
 })
-app.listen("3003", () => {
-  console.log("Backend is running.");
-});
+app.listen(PORT, () => {
+  console.log('listening on', PORT)
+})
 
 
 
