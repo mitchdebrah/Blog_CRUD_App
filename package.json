@@ -15,13 +15,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "heroku-postbuild": "cd frontend && npm install && npm install --only=dev --noshrinkwrap && npm run build",  
-    "start":"node server.js",
+    "heroku-postbuild": "cd frontend && npm install && npm install --only=dev --noshrinkwrap && npm run build",
+    "start": "node server.js",
     "server": "nodemon server.js"
-   
-   
-
-    
   },
   "author": "Mitchell",
   "license": "ISC",

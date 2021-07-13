@@ -9,6 +9,7 @@ const postsroute = require("./controllers/posts");
 const sectionsroute = require("./controllers/sections");
 const multer = require("multer");
 const path = require("path");
+const cors = require('cors')
 
 dotenv.config();
 app.use(express.json());
@@ -25,9 +26,9 @@ mongoose
     useFindAndModify:false,
   })
 
-  mongoose.connection.once('open', ()=> {
-    console.log('connected to mongo :)')
-})
+//   // mongoose.connection.once('open', ()=> {
+//   //   console.log('connected to mongo :)')
+// })
   .then(console.log("Connected to MongoDB"))
   .catch((err) => console.log(err));
 
@@ -49,6 +50,26 @@ app.use("/api/auth", authroute);
 app.use("/api/users", userroute);
 app.use("/api/posts", postsroute);
 app.use("/api/sections", sectionsroute);
+
+if(process.env.NODE_ENV === "production"){
+  app.use(express.static(path.join(__dirname, "frontend/build")));
+  app.get("*", function (req, res){
+    res.sendFile(path.join(__dirname, "frontend/build"));
+  });
+}
+
+const whitelist = ['http://localhost:3000']
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1) {
+      callback(null, true)
+    } else {
+      callback(new Error('Not allowed by CORS'))
+    }
+  }
+}
+
+app.use(cors(corsOptions))
 
 app.get('/', (req, res) => {
   res.send('server up')
