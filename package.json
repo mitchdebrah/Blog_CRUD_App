@@ -1,9 +1,10 @@
 {
-  "name": "backend",
+  "name": "blog_crud_app",
   "version": "1.0.0",
   "main": "server.js",
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "concurrently": "^6.2.0",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
@@ -14,10 +15,15 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "client-install":"npm install --prefix client",
+    "start":"node server.js",
+    "server": "nodemon server.js",
+    "client":"npm start --prefix client",
+    "dev":"concurrently \"npm run server.js\" \"npm run frontend\""
+
+    
   },
-  "author": "",
+  "author": "Mitchell",
   "license": "ISC",
   "description": ""
 }
