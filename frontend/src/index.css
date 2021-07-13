@@ -3,4 +3,958 @@
   margin: auto;
   font-family: rubik;
   margin-top: 50px;
+
+  width: 90%;
+  height: auto;
+
+  border: 3px solid rgb(0, 0, 0);
+  padding: 30px;
+
+  box-shadow: 1px 1px 10px rgb(38, 41, 41), -1px -1px 10px rgb(33, 58, 54),
+    1px -1px 10px rgb(121, 200, 228), -1px 1px 10px rgb(230, 225, 225);
+}
+
+.log {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(244, 244, 244, 0.016), rgba(0, 0, 0, 0.5)),
+    url("https://image.freepik.com/free-photo/sea-rope-with-many-different-sea-shells-sea-sand-blue-wooden-background-top-view_93675-13618.jpg");
+  background-size: cover;
+}
+
+.homepage {
+  display: flex;
+}
+.logTitle {
+  font-size: 50px;
+  color: rgb(7, 22, 82);
+}
+
+.logForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logForm > label {
+  margin: 10px 0;
+}
+
+.logput {
+  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.logput:focus {
+  outline: none;
+}
+
+.logButton {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: rgb(223, 162, 6);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+}
+.logButt:disabled {
+  cursor: not-allowed;
+  background-color: rgb(65, 225, 11);
+}
+
+.logRegButt {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: teal;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.logsbT {
+  color: rgb(7, 22, 82);
+}
+
+.onepst {
+  width: 385px;
+  margin: 0px 25px 40px 25px;
+}
+
+.pImg {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.pInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.psect {
+  font-family: "Varela Round", sans-serif;
+  font-size: 11px;
+  color: #be9656;
+  line-height: 20px;
+  margin-top: 15px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.ptitle {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.pdate {
+  font-family: "Lora", serif;
+  font-style: italic;
+  font-size: 13px;
+  color: #999;
+  margin-top: 15px;
+}
+
+.pdesc {
+  font-family: "Varela Round", sans-serif;
+  font-size: 14px;
+  color: #444;
+  line-height: 24px;
+  margin-top: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.posts {
+  flex: 9;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 19px;
+}
+.sidb {
+  flex: 3;
+  margin: 20px;
+  padding-bottom: 30px;
+  background-color: #fdfbfb;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidTitle {
+  /* margin: 10px;
+  padding: 5px;
+  width: 80%; */
+  border-top: 1px solid #a7a4a4;
+  border-bottom: 1px solid #a7a4a4;
+  font-family: "Varela Round", sans-serif;
+  font-size: 12px;
+  color: #222;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+}
+
+.sidItem > img {
+  margin-top: 15px;
+}
+
+.sidItem > p {
+  padding: 30px;
+}
+
+.sidList {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.sidebarList {
+  display: inline-block;
+  width: 50%;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.sidSocial {
+  margin-top: 15px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sideIcon {
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.imgphoto {
+  width: 200px;
+  height: 200px;
+}
+
+.sinost {
+  flex: 9;
+}
+
+.singWrapper {
+  padding: 20px;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.singmg {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.singtitle {
+  text-align: center;
+  margin: 10px;
+  font-family: "Lora", serif;
+  font-size: 28px;
+}
+
+.singInput {
+  margin: 10px;
+  font-family: "Lora", serif;
+  font-size: 28px;
+  text-align: center;
+  border: none;
+  color: gray;
+  border-bottom: 1px solid lightgray;
+}
+
+.singleput:focus {
+  outline: none;
+}
+
+.singdit {
+  float: right;
+  font-size: 16px;
+}
+
+.singcon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.singcon:first-child {
+  color: rgb(1, 11, 11);
+}
+
+.singcon:last-child {
+  color: rgb(11, 4, 3);
+}
+
+.singInfo {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-family: "Varela Round", sans-serif;
+  color: #b39656;
+}
+
+.singDesc {
+  color: #666;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.singDesc::first-letter {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.singleput {
+  border: none;
+  color: #666;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.singleput:focus {
+  outline: none;
+}
+.singButton {
+  width: 100px;
+  border: none;
+  background-color: teal;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 20px;
+}
+
+.reg {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      rgba(3, 58, 23, 0.509),
+      rgba(170, 220, 232, 0.077)
+    ),
+    url("https://thumbs.dreamstime.com/b/banner-shells-blue-wood-background-light-format-60791177.jpg");
+  background-size: cover;
+}
+
+.regTitle {
+  font-size: 50px;
+  color: rgb(7, 22, 82);
+}
+
+.regForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.regForm > label {
+  margin: 10px 0;
+}
+
+.regIn {
+  padding: 10px;
+  background-color: rgb(242, 241, 241);
+  border: 20;
+  border-radius: 10px;
+  color: rgb(1, 0, 0);
+}
+
+.regButt {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: rgb(13, 155, 25);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.logButt {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: lightcoral;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+}
+
+.reglit {
+  color: rgb(3, 29, 135);
+}
+
+.sets {
+  display: flex;
+}
+
+.setsWrap {
+  flex: 9;
+  padding: 20px;
+}
+
+.setTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.seUpTi {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: rgb(7, 4, 60);
+}
+
+.setDelTitle {
+  color: rgb(206, 4, 216);
+  font-size: 12px;
+  cursor: pointer;
+  position: absolute;
+  margin-right: 2000;
+  margin-top: 50px;
+}
+
+.setForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.setPP {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.setPP > img {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.setPPIcon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(13, 3, 54);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.setForm > label {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.setForm > input {
+  color: gray;
+  margin: 10px 0;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+
+.setSubmit {
+  width: 150px;
+  align-self: center;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(232, 119, 58);
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.sinost {
+  flex: 9;
+}
+
+.singWrapper {
+  padding: 20px;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.singmg {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.singtitle {
+  text-align: center;
+  margin: 10px;
+  font-family: "Lora", serif;
+  font-size: 28px;
+}
+
+.singInput {
+  margin: 10px;
+  font-family: "Lora", serif;
+  font-size: 28px;
+  text-align: center;
+  border: none;
+  color: gray;
+  border-bottom: 1px solid lightgray;
+}
+
+.singleput:focus {
+  outline: none;
+}
+
+.singdit {
+  float: right;
+  font-size: 16px;
+}
+
+.singcon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.singcon:first-child {
+  color: rgb(1, 11, 11);
+}
+
+.singcon:last-child {
+  color: rgb(11, 4, 3);
+}
+
+.singInfo {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-family: "Varela Round", sans-serif;
+  color: #b39656;
+}
+
+.singDesc {
+  color: #666;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.singDesc::first-letter {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.singleput {
+  border: none;
+  color: #666;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.singleput:focus {
+  outline: none;
+}
+.singButton {
+  width: 100px;
+  border: none;
+  background-color: teal;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 20px;
+}
+
+
+
+
+.tocent {
+  flex: 6;
+}
+
+.topIcon1 {
+  font-size: 20px;
+  margin-right: 10px;
+  color: rgb(12, 55, 194);
+  cursor: pointer;
+}
+.topIcon2 {
+  font-size: 20px;
+  margin-right: 10px;
+  color: rgb(56, 118, 227);
+  cursor: pointer;
+}
+.topIcon3 {
+  font-size: 20px;
+  margin-right: 10px;
+  color: rgb(173, 29, 213);
+  cursor: pointer;
+}
+.topIcon4 {
+  font-size: 20px;
+  margin-right: 10px;
+  color: rgb(40, 73, 208);
+  cursor: pointer;
+}
+.topIcon5 {
+  font-size: 20px;
+  margin-right: 10px;
+  color: rgb(213, 24, 213);
+  cursor: pointer;
+}
+
+.toImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.tolit {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tologout {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  color: rgb(245, 245, 245);
+}
+
+.tolitit {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.topSearchIcon {
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.tolitito {
+  margin-left: 1350px;
+  font-size: 18px;
+  font-weight: 300;
+  position: absolute;
+  color: white;
+}
+
+.headbd {
+  margin-top: 60px;
+}
+
+.headerTitles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Lora", serif;
+  color: rgb(19, 60, 148);
+}
+
+.headerTitleSm {
+  position: absolute;
+  top: 18%;
+  font-size: 20px;
+}
+
+
+.Imghead {
+  width: 100%;
+  height: 550px;
+  margin-top: 80px;
+  object-fit: cover;
+}
+
+.single {
+  display: flex;
+}
+
+.write {
+  padding-top: 50px;
+}
+
+.wImg {
+  margin-left: 150px;
+  width: 70vw;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.wForm {
+  position: relative;
+}
+
+.wForGroup {
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.wIcon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: rgb(121, 118, 118);
+  cursor: pointer;
+}
+
+.wInput {
+  font-size: 30px;
+  border: none;
+  padding: 20px;
+  width: 70vw;
+}
+
+.wInput:focus {
+  outline: none;
+}
+
+.wText {
+  font-size: 20px;
+  height: 100vh;
+}
+
+.wSubmit {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  color: white;
+  background-color: teal;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.topper {
+  color: #000000;
+
+  opacity: 0.8;
+  border: 1px solid rgba(12, 71, 72, 0.1);
+  box-shadow: inset 0 2px 3px rgba(24, 1, 1, 0.3),
+    inset 0 -2px 3px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(2, 106, 87, 0.9);
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(9, 151, 167, 0.954);
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  z-index: 999;
+}
+
+.topperLef,
+.torit {
+  color: #000000;
+  text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5),
+    2px -2px 0 rgba(41, 3, 3, 0.9);
+  /* opacity: 0.8; */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* box-shadow: inset 0 2px 3px rgba(24, 1, 1, 0.3),
+    inset 0 -2px 3px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(2, 106, 87, 0.9); */
+  text-align: center;
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tocent {
+  flex: 6;
+}
+
+.topIcon1 {
+  font-size: 20px;
+  margin-right: 10px;
+  color: rgb(12, 55, 194);
+  cursor: pointer;
+}
+.topIcon2 {
+  font-size: 20px;
+  margin-right: 10px;
+  color: rgb(56, 118, 227);
+  cursor: pointer;
+}
+.topIcon3 {
+  font-size: 20px;
+  margin-right: 10px;
+  color: rgb(173, 29, 213);
+  cursor: pointer;
+}
+.topIcon4 {
+  font-size: 20px;
+  margin-right: 10px;
+  color: rgb(40, 73, 208);
+  cursor: pointer;
+}
+.topIcon5 {
+  font-size: 20px;
+  margin-right: 10px;
+  color: rgb(213, 24, 213);
+  cursor: pointer;
+}
+
+.toImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.tolit {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tologout {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  color: rgb(245, 245, 245);
+}
+
+.tolitit {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.topSearchIcon {
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.tolitito {
+  margin-left: 1350px;
+  font-size: 18px;
+  font-weight: 300;
+  position: absolute;
+  color: white;
+}
+
+.headbd {
+  margin-top: 60px;
+}
+
+.headerTitles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Lora", serif;
+  color: rgb(19, 60, 148);
+}
+
+.headerTitleSm {
+  position: absolute;
+  top: 18%;
+  font-size: 20px;
+}
+
+.blogtitle {
+  color: #1608a9;
+  text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5),
+    2px -2px 0 rgba(222, 211, 211, 0.9);
+  /* opacity: 0.8; */
+
+  box-shadow: inset 0 2px 3px rgba(255, 255, 255, 0.002),
+    inset 0 -2px 3px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(2, 106, 87, 0.009);
+  text-align: center;
+  position: absolute;
+  top: 11%;
+  font-size: 100px;
+}
+
+.Imghead {
+  width: 100%;
+  height: 550px;
+  margin-top: 80px;
+  object-fit: cover;
+}
+
+.wImg {
+  margin-left: 150px;
+  width: 70vw;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.wForm {
+  position: relative;
+}
+
+.wForGroup {
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.wIcon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: rgb(121, 118, 118);
+  cursor: pointer;
+}
+
+.wInput {
+  font-size: 30px;
+  border: none;
+  padding: 20px;
+  width: 70vw;
+}
+
+.wInput:focus {
+  outline: none;
+}
+
+.wText {
+  font-size: 20px;
+  height: 100vh;
+}
+
+.wSubmit {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  color: white;
+  background-color: teal;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
 }
