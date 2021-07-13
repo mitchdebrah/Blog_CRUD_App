@@ -1,7 +1,7 @@
 
 import "../index.css";
 
-const Header =() => {
+const TopHeader =() => {
   return (
     <div className="headbd">
       <div className="headerTitles">
@@ -16,4 +16,4 @@ const Header =() => {
     </div>
   );
 }
-export default Header;
+export default TopHeader;

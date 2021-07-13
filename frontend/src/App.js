@@ -25,10 +25,10 @@ const  App = ()=> {
         <Route exact path="/">
           <Homepage />
         </Route>
-        <Route path="/Registerpage">{user ? <Homepage /> : <Registerpage />}</Route>
-        <Route path="/Loginpage">{user ? <Homepage /> : <Loginpage />}</Route>
-        <Route path="/Author">{user ? <Author /> : <Registerpage />}</Route>
-        <Route path="/SettingsAcct">{user ? <SettingsAcct /> : <Registerpage />}</Route>
+        <Route path="/register">{user ? <Homepage /> : <Registerpage />}</Route>
+        <Route path="/login">{user ? <Homepage /> : <Loginpage />}</Route>
+        <Route path="/write">{user ? <Author /> : <Registerpage />}</Route>
+        <Route path="/settings">{user ? <SettingsAcct /> : <Registerpage />}</Route>
         <Route path="/post/:postId">
           <Singlepage />
         </Route>
