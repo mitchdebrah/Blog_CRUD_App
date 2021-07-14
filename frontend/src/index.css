@@ -86,8 +86,9 @@
 }
 
 .onepst {
-  width: 385px;
+  width: 300px;
   margin: 0px 25px 40px 25px;
+  
 }
 
 .pImg {
@@ -95,7 +96,8 @@
   height: 280px;
   object-fit: cover;
   border-radius: 7px;
-  margin-top: 150px;
+  margin-top: 155px;
+  
 }
 
 .pInfo {
@@ -163,6 +165,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
   
 }
 
@@ -890,7 +893,7 @@
   
   text-align: center;
   position: absolute;
-  top: 15%;
+  top: 5%;
   font-size: 50px;
   margin-right:100px;
 }
@@ -961,3 +964,6 @@
   cursor: pointer;
   font-size: 16px;
 }
+/* .video-container{
+  margin-top:  170px;
+} */
