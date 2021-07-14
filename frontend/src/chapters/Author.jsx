@@ -39,7 +39,7 @@ const Author = ()=> {
       <form className="wForm" onSubmit={handleSubmit}>
         <div className="wForGroup">
           <label htmlFor="fileInput">
-            <i className="wIcon fas fa-plus"></i>
+          <i className="fas fa-folder-open"></i>
           </label>
           <input
             type="file"
