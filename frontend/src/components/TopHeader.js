@@ -6,7 +6,7 @@ const TopHeader =() => {
     <div className="headbd">
       <div className="headerTitles">
         {/* <span className="headerTitleSm">React & Node</span> */}
-        <span className="blogtitle">Oceanic Life Blog</span>
+        <span className="blogtitle">Oceanic Wild Life </span>
       </div>
       <img
         className="Imghegfhad"
