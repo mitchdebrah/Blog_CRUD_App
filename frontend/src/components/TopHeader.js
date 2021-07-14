@@ -9,8 +9,8 @@ const TopHeader =() => {
         <span className="blogtitle">Oceanic Life Blog</span>
       </div>
       <img
-        className="Imghead"
-        src="https://d3hnfqimznafg0.cloudfront.net/images/Article_Images/ImageForArticle_1219_16188294042402066.jpg"
+        className="Imghegfhad"
+        
         alt=""
       />
     </div>

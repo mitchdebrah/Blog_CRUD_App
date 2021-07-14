@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../medium/Context";
 import "../index.css";
 
-const SinglePage = () => {
+const SinglePost = () => {
   const location = useLocation();
   const path = location.pathname.split("/")[2];
   const [post, setPost] = useState({});
@@ -80,7 +80,7 @@ const SinglePage = () => {
         )}
         <div className="singInfo">
           <span className="singthor">
-            Author:
+            Writer:
             <Link to={`/?user=${post.username}`} className="link">
               <b> {post.username}</b>
             </Link>
@@ -107,4 +107,4 @@ const SinglePage = () => {
     </div>
   );
 };
-export default SinglePage;
+export default SinglePost;

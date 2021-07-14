@@ -18,7 +18,7 @@ export default function Sidebar() {
       <div className="sidItem">
         <span className="sidTitle">BIOGRAPHY</span>
         <img className="imgphoto"
-          src="https://grist.org/wp-content/uploads/2015/08/kramer.jpg?w=330"
+          src="https://images.unsplash.com/photo-1579503475296-489bf078e9af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHNjdWJhJTIwZGl2aW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
           alt=""
         />
         <p>

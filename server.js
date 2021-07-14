@@ -3,10 +3,10 @@ const express = require("express");
 const app = express();
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
-// const authroute = require("./controllers/auth");
-// const userroute = require("./controllers/users");
-// const postsroute = require("./controllers/posts");
-// const sectionsroute = require("./controllers/sections");
+const authroute = require("./controllers/auth");
+const userroute = require("./controllers/users");
+const postsroute = require("./controllers/posts");
+const sectionsroute = require("./controllers/sections");
 const multer = require("multer");
 const path = require("path");
 const cors = require('cors')
@@ -46,10 +46,10 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
   res.status(200).json("File has been uploaded");
 });
 
-// app.use("/api/auth", authroute);
-// app.use("/api/users", userroute);
-// app.use("/api/posts", postsroute);
-// app.use("/api/sections", sectionsroute);
+app.use("/api/auth", authroute);
+app.use("/api/users", userroute);
+app.use("/api/posts", postsroute);
+app.use("/api/sections", sectionsroute);
 
 if(process.env.NODE_ENV === "production"){
   app.use(express.static(path.join(__dirname, "frontend/build")));

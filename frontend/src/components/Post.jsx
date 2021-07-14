@@ -20,7 +20,7 @@ const Post =({ post }) => {
           {new Date(post.createdAt).toDateString()}
         </span>
       </div>
-      <p className="pDesc">{post.desc}</p>
+      <p className="pDesc">{post.description}</p>
     </div>
   );
 }
