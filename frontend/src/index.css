@@ -125,8 +125,8 @@
   font-family: "Lora", serif;
   font-style: italic;
   font-size: 13px;
-  color: #999;
-  margin-top: 15px;
+  color: rgb(108, 91, 67);
+  margin-top: px;
 }
 
 .pdesc {
@@ -538,6 +538,7 @@
   line-height: 25px;
 }
 
+
 .singDesc::first-letter {
   margin-left: 20px;
   font-size: 30px;
@@ -887,9 +888,9 @@
   
   text-align: center;
   position: absolute;
-  top: 11%;
-  font-size: 100px;
-  margin-right:200px;
+  top: 5%;
+  font-size: 80px;
+  margin-right:80px;
 }
 
 .Imghead {
